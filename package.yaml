@@ -1,0 +1,65 @@
+name:                aeson-value-qq
+version:             1.0.0
+synopsis:            QuasiQuoter for Aeson.Value
+description:         See README.markdown
+license:             BSD2
+author:              Matvey Aksenov
+maintainer:          matvey.aksenov@gmail.com
+copyright:           2026 Matvey Aksenov
+extra-doc-files:
+  - README.markdown
+  - CHANGELOG.markdown
+github: supki/aeson-value-qq
+tested-with:
+  - GHC==9.8.4
+
+dependencies:
+  - base >= 4.7 && < 5
+
+default-extensions:
+  - ImportQualifiedPost
+  - NoFieldSelectors
+  - OverloadedStrings
+
+library:
+  dependencies:
+    - aeson
+    - attoparsec
+    - attoparsec-aeson
+    - bytestring
+    - ghc-hs-meta
+    - scientific
+    - template-haskell
+    - text
+    - unordered-containers
+    - vector
+  source-dirs:
+    src
+  other-modules:
+    - Paths_aeson_value_qq
+  generated-exposed-modules:
+    - Meta_aeson_value_qq
+  ghc-options:
+    - -funbox-strict-fields
+    - -Wall
+    - -Wno-incomplete-uni-patterns
+    # - -Werror
+
+
+tests:
+  spec:
+    dependencies:
+      - aeson
+      - aeson-value-qq
+      - hspec
+    source-dirs:
+      test
+    main:
+      Spec.hs
+    ghc-options:
+      - -freduction-depth=0
+      - -Wall
+      - -Wno-incomplete-uni-patterns
+      # - -Werror
+      - -threaded
+      - -with-rtsopts=-N

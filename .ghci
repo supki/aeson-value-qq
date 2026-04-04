@@ -1,0 +1,8 @@
+:set -Wall
+:set -Wno-incomplete-uni-patterns
+:set -isrc
+:set -itest
+:set -i.stack-work/dist/x86_64-linux/ghc-9.8.4/build/global-autogen
+:set -XImportQualifiedPost
+:set -XNoFieldSelectors
+:set -XOverloadedStrings
