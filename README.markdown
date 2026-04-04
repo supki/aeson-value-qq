@@ -1,6 +1,6 @@
 aeson-value-qq provides a `QuasiQuoter` that creates aeson `Value`s using JSON-like syntax.  
 It's a sister package of [aeson-match-qq](https://github.com/supki/aeson-match-qq)
-`
+
 `aeson-qq` is a very similar package. The main differences (as far as I can say) are:
 
   - we use aeson-attoparsec's parsers (specifically, `jstring` and `scientific`) where possible
