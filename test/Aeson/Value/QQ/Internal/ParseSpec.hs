@@ -45,8 +45,8 @@ spec = do
       Aeson.Object []
     [qq| {foo: 4} |] `shouldBe`
       Aeson.Object [("foo", Aeson.Number 4)]
-    [qq| {foo: 4, "bar": 7} |] `shouldBe`
-      Aeson.Object [("foo", Aeson.Number 4), ("bar", Aeson.Number 7)]
+    [qq| {foo: 4, "bar-baz": 7} |] `shouldBe`
+      Aeson.Object [("foo", Aeson.Number 4), ("bar-baz", Aeson.Number 7)]
     [qq|
       { foo: 4
       , "bar": 7
