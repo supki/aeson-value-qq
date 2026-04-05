@@ -95,6 +95,9 @@ spec = do
     |] `shouldBe`
       Aeson.Object [("foo", Aeson.Number 4), ("bar", Aeson.Number 7)]
 
+  it "unicode" $
+    [qq| "бусифікація" |] `shouldBe` Aeson.String "бусифікація"
+
   it "overloaded-record-dot" $ do
     let
       foo = Foo 4

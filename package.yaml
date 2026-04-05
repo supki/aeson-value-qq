@@ -35,10 +35,6 @@ library:
     - vector
   source-dirs:
     src
-  other-modules:
-    - Paths_aeson_value_qq
-  generated-exposed-modules:
-    - Meta_aeson_value_qq
   ghc-options:
     - -funbox-strict-fields
     - -Wall

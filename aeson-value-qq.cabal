@@ -1,4 +1,4 @@
-cabal-version: 2.0
+cabal-version: 1.18
 
 -- This file has been generated from package.yaml by hpack version 0.38.1.
 --
@@ -32,12 +32,8 @@ library
       Aeson.Value.QQ.Internal.Parse
       Aeson.Value.QQ.Internal.Quote
       Aeson.Value.QQ.Internal.Value
-      Meta_aeson_value_qq
   other-modules:
       Paths_aeson_value_qq
-  autogen-modules:
-      Paths_aeson_value_qq
-      Meta_aeson_value_qq
   hs-source-dirs:
       src
   default-extensions:
@@ -64,8 +60,6 @@ test-suite spec
   main-is: Spec.hs
   other-modules:
       Aeson.Value.QQ.Internal.ParseSpec
-      Paths_aeson_value_qq
-  autogen-modules:
       Paths_aeson_value_qq
   hs-source-dirs:
       test
